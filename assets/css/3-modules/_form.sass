@@ -1,0 +1,68 @@
+.form-lockup
+  color: #000000
+
+.form-header
+  color: white
+  text-align: center
+  font-size: 30px
+  font-weight: 700
+
+form
+  max-width: 850px
+  margin: 0 auto 100px
+  padding: 0 20px
+    
+  input, textarea
+    border: 6px solid $form-color
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    font-size: 16px
+    
+    &:focus
+      outline: none
+      border-color: $form-highlight-color
+  
+  textarea
+    height: 15em
+      
+  .submit-wrap
+    text-align: right
+    
+  [type="submit"]
+    background: $form-color
+    color: white
+    font-size: 18px
+    text-transform: uppercase
+    width: 33%
+    
+    &:hover
+      background: $form-highlight-color
+
+    
+    
+  
+  
+  .contact-info-group
+    
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+      
+      &:nth-child(1)
+        padding-right: 10px
+        
+      &:nth-child(2)
+        padding-left: 10px
+  
+  label
+    display: block
+    margin-bottom: 20px
+    
+    span
+      display: block
+      color: #ffffff
