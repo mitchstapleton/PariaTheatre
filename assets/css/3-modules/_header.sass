@@ -1,35 +1,33 @@
 .HeaderContainer
     height: 45px
     width: 100%
-    background: #6441A5
     @include background( linear-gradient(to left, #6441A5 , #2a0845))
-    background-size: cover
-    display: block
-    
-.HeaderTitle
-    display: inline-block
+    @include display(inline-block)
+        
+            
+.HeaderLogo
     font-family: 'Montserrat', sans-serif
+    display: inline-block
     font-weight: 700
     font-size: 30px
     line-height: 1
-    text-align: center
     padding: 0px 10px
     color: #ffffff
     margin: 3px 0px 0px 20px
     
-.navbar
+.HeaderTitle
     display: inline-block
-    position: relative
-    float: right
-    padding: 0px 20px 0px 40px
+    
+.navbar
+    padding: 13px 20px 0px 0px
     margin: 0px 0px 0px 0px
     text-transform: uppercase
     font-weight: 700
-    font-size: 20px
-    
+    font-size: 18px
+    display: inline-block
+    float: right
     
 nav a
-    display: inline-block
     color: white
     text-align: center
     padding: 8px 12px 0px 12px
@@ -46,3 +44,16 @@ nav a
     width: 20px
     fill: white
     margin: 0px 20px 0px 0px
+    
+@media only screen and (max-width: 1160px)
+            
+    .HeaderTitle
+        display: none
+        
+    .navbar
+        padding: 13px 20px 0px 0px
+        margin: 0px 0px 0px 0px
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 18px
+        display: inline-block
