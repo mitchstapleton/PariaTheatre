@@ -778,3 +778,16 @@ form {
     form label span {
       display: block;
       color: #ffffff; }
+
+.classes-landing-title {
+  text-transform: uppercase; }
+
+.classes-landing-lockup {
+  background: url(../images/ClassesTest.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  border: 1px solid red;
+  height: 920px;
+  z-index: 1000;
+  display: block; }
