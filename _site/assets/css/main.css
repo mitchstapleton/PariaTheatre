@@ -532,7 +532,6 @@ nav a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  border: 1px solid red;
   height: calc(100vh - 45px);
   z-index: 1000;
   display: block; }
@@ -548,7 +547,7 @@ nav a {
   letter-spacing: 0.3em;
   font-weight: 400;
   font-family: Gill Sans, sans-serif;
-  border-bottom: 5px solid #fff; }
+  border-bottom: 2px solid #fff; }
 
 .about-intro-continue {
   display: block;
@@ -601,6 +600,7 @@ nav a {
   width: 50%;
   text-transform: uppercase;
   font-size: 1.5em;
+  font-weight: 300;
   margin: 0px auto;
   max-width: 400px;
   line-height: 1.6em; }
@@ -610,8 +610,9 @@ nav a {
   width: 50%;
   max-width: 641px;
   max-height: 483px;
-  font-size: 22px;
-  font-weight: 400; }
+  font-size: 1.2em;
+  line-height: 1.35em;
+  font-weight: 300; }
 
 .history-blurb-lockup {
   background-color: #4E0438;
@@ -693,8 +694,7 @@ nav a {
   left: 50px; }
 
 .contact-lockup {
-  width: 100%;
-  border: 5px solid red; }
+  width: 100%; }
 
 .contact-title {
   text-align: left;
@@ -735,7 +735,7 @@ form {
   margin: 0 auto 100px;
   padding: 0 20px; }
   form input, form textarea {
-    border: 6px solid #582A72;
+    border: 1px solid #582A72;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -790,7 +790,7 @@ form {
   border-bottom: 5px solid #fff; }
 
 .classes-landing-lockup {
-  background: url(../images/ClassesTest.jpg) no-repeat center center;
+  background: url(../images/PariaHomeTest2.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -803,12 +803,13 @@ form {
   position: absolute;
   top: 200px;
   left: 0px;
-  max-width: 80%;
-  font-size: 28px;
+  max-width: 60%;
+  font-size: 22px;
   background: rgba(42, 8, 69, 0.7);
   padding: 0px 10px 0px 60px;
   letter-spacing: 0.1em;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.3em; }
 
 .classes-levels-landing-lockup {
   display: inline-block;
@@ -824,8 +825,8 @@ form {
 
 .classes-level-one-lockup {
   display: block;
-  background: rgba(42, 8, 69, 0.8);
-  padding: 40px 30px;
+  background: white;
+  padding: 45px 60px;
   height: 600px; }
 
 .level-one {
@@ -834,7 +835,8 @@ form {
   font-size: 48px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
 
 .level-one-title {
   text-transform: uppercase;
@@ -842,30 +844,35 @@ form {
   font-size: 32px;
   letter-spacing: 0.3em;
   font-weight: 300;
-  font-family: Gill Sans, sans-serif; }
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
 
 .level-one-picture {
-  background: url(../images/classes_level_one_photo.jpg) no-repeat;
-  height: 400px;
-  width: 400px;
+  background: url(../images/classes1.jpg) no-repeat;
+  width: 520px;
+  height: 288px;
   background-size: contain;
-  display: inline-block;
+  display: inline;
   position: relative;
-  float: right; }
+  float: right;
+  top: -82px;
+  border-radius: 10px; }
 
 .level-one-description {
   display: inline-block;
-  padding-right: 10%;
-  width: 50%;
+  max-width: 750px;
+  position: relative;
+  top: 30px;
   font-size: 1.2em;
   margin: 0px auto;
-  line-height: 1.2em;
-  padding-top: 100px; }
+  line-height: 1.7em;
+  color: #6B6A6A;
+  font-weight: 300; }
 
 .classes-level-two-lockup {
   display: block;
-  background: rgba(140, 53, 114, 0.8);
-  padding: 40px 30px;
+  background: rgba(92, 52, 125, 0.8);
+  padding: 45px 60px;
   height: 600px; }
 
 .level-two {
@@ -884,18 +891,33 @@ form {
   font-weight: 300;
   font-family: Gill Sans, sans-serif; }
 
+.level-two-picture {
+  background: url(../images/classes2.jpg) no-repeat;
+  width: 500px;
+  height: 288px;
+  background-size: contain;
+  display: inline;
+  position: relative;
+  float: right;
+  top: -82px;
+  border-radius: 5%;
+  -moz-border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -o-border-radius: 5%; }
+
 .level-two-description {
   display: inline-block;
-  padding-right: 10%;
-  width: 50%;
+  max-width: 750px;
+  position: relative;
+  top: 30px;
   font-size: 1.2em;
   margin: 0px auto;
-  line-height: 1.2em;
-  padding-top: 100px; }
+  line-height: 1.7em;
+  font-weight: 300; }
 
 .classes-level-three-lockup {
   display: block;
-  background: rgba(92, 52, 125, 0.8);
+  background: rgba(42, 8, 69, 0.8);
   padding: 40px 30px;
   height: 600px; }
 
@@ -922,7 +944,8 @@ form {
   font-size: 1.2em;
   margin: 0px auto;
   line-height: 1.2em;
-  padding-top: 100px; }
+  padding-top: 50px;
+  font-weight: 300; }
 
 .classes-level-four-lockup {
   display: block;
