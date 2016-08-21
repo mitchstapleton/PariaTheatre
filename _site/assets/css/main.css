@@ -436,11 +436,10 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
+  width: 40%;
+  height: 0px;
+  border-top: 2px solid #6441A5;
+  margin: 85px auto 30px; }
 
 a {
   color: #ffffff; }
@@ -696,7 +695,7 @@ nav a {
 .contact-lockup {
   display: block;
   background: white;
-  padding: 45px 60px;
+  padding: 40px 60px;
   height: calc(100vh - 45px);
   z-index: 1000;
   display: block; }
@@ -704,7 +703,7 @@ nav a {
 .contact-title {
   text-transform: uppercase;
   display: block;
-  font-size: 32px;
+  font-size: 42px;
   letter-spacing: 0.3em;
   font-weight: 300;
   font-family: Gill Sans, sans-serif;
@@ -756,7 +755,7 @@ nav a {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    width: 66%; }
+    width: 50%; }
     .contact-page-form [type="submit"]:hover {
       background: #764B8E; }
   .contact-page-form .contact-page-info-group {
@@ -777,6 +776,65 @@ nav a {
     .contact-page-form label span {
       display: block;
       color: #333; }
+
+.section-contact {
+  text-align: center;
+  margin: 0px 0px 50px; }
+
+.social-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
+
+.social-links {
+  max-width: 900px;
+  margin: 0px auto 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .social-links a {
+    display: block;
+    background: #582A72;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    color: white;
+    border-radius: 50%;
+    margin: 20px;
+    font-size: 60px;
+    text-decoration: none;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    .social-links a:hover {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5); }
 
 .form-lockup {
   color: #000000; }
