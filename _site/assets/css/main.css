@@ -434,12 +434,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.headroom {
+  will-change: transform;
+  transition: transform 250ms ease-in-out;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999; }
+
+.headroom--pinned {
+  transform: translateY(0%); }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
+
 .HeaderContainer {
   height: 45px;
-  width: 100%;
   background: -webkit-linear-gradient( right , #6441A5, #2a0845);
-  background: linear-gradient(to left, #6441A5, #2a0845);
-  display: inline-block; }
+  background: linear-gradient(to left, #6441A5, #2a0845); }
 
 .HeaderLogo {
   font-family: "Montserrat", sans-serif;
@@ -720,7 +733,8 @@ nav a {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    width: 50%; }
+    width: 33%;
+    float: right; }
     .contact-page-form [type="submit"]:hover {
       background: #764B8E; }
   .contact-page-form .contact-page-info-group {
@@ -875,8 +889,10 @@ form {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: calc(100vh - 45px);
-  z-index: 1000;
-  display: block; }
+  z-index: 100;
+  display: block;
+  position: relative;
+  top: 45px; }
 
 .classes-landing-blurb {
   display: inline-block;
@@ -907,6 +923,7 @@ form {
   display: block;
   background: white;
   padding: 45px 60px;
+  margin: 45px 0px;
   height: 600px; }
 
 .level-one {

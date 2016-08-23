@@ -1,8 +1,21 @@
+.headroom
+    will-change: transform
+    transition: transform 250ms ease-in-out
+    position: fixed
+    top: 0px
+    left: 0px
+    width: 100%
+    z-index: 999
+    
+.headroom--pinned
+    transform: translateY(0%)
+    
+.headroom--unpinned
+    transform: translateY(-100%)
+
 .HeaderContainer
     height: 45px
-    width: 100%
     @include background( linear-gradient(to left, #6441A5 , #2a0845))
-    @include display(inline-block)
         
             
 .HeaderLogo
