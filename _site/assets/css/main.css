@@ -675,8 +675,10 @@ nav a {
   background: white;
   padding: 40px 60px;
   height: calc(100vh - 45px);
-  z-index: 1000;
-  display: block; }
+  z-index: 100;
+  display: block;
+  position: relative;
+  top: 35px; }
 
 .contact-title {
   text-transform: uppercase;
@@ -709,7 +711,7 @@ nav a {
 .contact-page-form {
   max-width: 850px;
   margin: 0 auto 100px;
-  padding: 0 20px; }
+  padding: 0 40px 0 20px; }
   .contact-page-form input, .contact-page-form textarea {
     border: 2px solid #582A72;
     width: 100%;
