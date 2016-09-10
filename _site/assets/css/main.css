@@ -412,6 +412,9 @@ a {
 a:hover, a:focus {
   color: #e6e6e6; }
 
+a:-webkit-any-link {
+  text-decoration: none !important; }
+
 ::selection {
   background: #FFF498; }
 
@@ -510,8 +513,10 @@ nav a {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: calc(100vh - 45px);
-  z-index: 1000;
-  display: block; }
+  z-index: 900;
+  display: block;
+  position: relative;
+  top: 45px; }
 
 .about-intro-text {
   text-align: center;
@@ -523,8 +528,7 @@ nav a {
   font-size: 60px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  border-bottom: 2px solid #fff; }
+  font-family: Gill Sans, sans-serif; }
 
 .about-intro-continue {
   display: block;
@@ -537,21 +541,12 @@ nav a {
   font-size: 40px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-  .about-intro-continue a {
-    display: block;
-    -webkit-transition: all 0.15s ease-out 0s;
-    -moz-transition: all 0.15s ease-out 0s;
-    transition: all 0.15s ease-out 0s; }
-    .about-intro-continue a:hover {
-      -webkit-transform: scale 1.2;
-      -moz-transform: scale 1.2;
-      -ms-transform: scale 1.2;
-      -o-transform: scale 1.2;
-      transform: scale 1.2; }
+  font-family: Gill Sans, sans-serif;
+  text-decoration: none; }
 
 .about-intro-downarrow {
-  display: inline-block;
+  display: block;
+  top: 10px;
   position: relative;
   margin: auto;
   width: 40px;
@@ -560,9 +555,10 @@ nav a {
 
 .whatis-blurb-lockup {
   display: block;
-  background-color: #2a0845;
+  background-color: #ffffff;
   text-align: center;
-  padding: 80px 30px; }
+  padding: 80px 30px;
+  height: 300px; }
 
 .whatis-blurb {
   display: inline-block;
@@ -576,11 +572,13 @@ nav a {
   padding-right: 10%;
   width: 50%;
   text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 1.3em;
+  font-weight: 400;
   margin: 0px auto;
   max-width: 400px;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  color: #333;
+  letter-spacing: 0.1em; }
 
 .whatis-blurb-bodytext {
   display: inline-block;
@@ -589,26 +587,28 @@ nav a {
   max-height: 483px;
   font-size: 1.2em;
   line-height: 1.35em;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #333; }
 
 .history-blurb-lockup {
-  background-color: #4E0438;
-  display: flex; }
+  background-color: #ffffff;
+  display: block;
+  height: 1500px;
+  padding: 60px 40px;
+  position: absolute; }
 
 .history-blurb {
-  width: 50%;
-  display: inline-block;
+  width: 61%;
+  display: block;
   position: relative;
-  max-width: 700px;
-  text-align: center;
+  top: 100px;
   margin: 0px auto;
   font-size: 24px;
   font-weight: 300;
-  border: 1px solid red; }
-  .history-blurb::after {
-    clear: both;
-    content: "";
-    display: table; }
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #6B6A6A; }
 
 .whyParia-blurb-lockup {
   background-color: #584469; }
@@ -635,14 +635,13 @@ nav a {
   position: absolute;
   text-align: left;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: Gill Sans, sans-serif;
   letter-spacing: 0.8em;
   text-transform: uppercase;
   line-height: 1.2em;
-  top: 225px;
-  left: 200px;
-  border: 1px solid red; }
+  top: 275px;
+  left: 200px; }
 
 .homepage-blurb {
   display: inline-block;
@@ -667,7 +666,7 @@ nav a {
   position: absolute;
   width: 200px;
   fill: white;
-  top: 50px;
+  top: 100px;
   left: 50px; }
 
 .contact-lockup {
@@ -923,8 +922,9 @@ form {
 
 .classes-level-one-lockup {
   display: block;
+  position: absolute;
   background: white;
-  padding: 45px 60px;
+  padding: 56px 7%;
   margin: 45px 0px;
   height: 600px; }
 
@@ -934,8 +934,7 @@ form {
   font-size: 48px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  color: #333; }
+  font-family: Gill Sans, sans-serif; }
 
 .biglink {
   color: black; }
@@ -943,6 +942,7 @@ form {
 .level-one-title {
   text-transform: uppercase;
   display: block;
+  max-width: 65%;
   font-size: 32px;
   letter-spacing: 0.3em;
   font-weight: 300;
@@ -950,19 +950,21 @@ form {
   color: #333; }
 
 .level-one-picture {
-  background: url(../images/classes1.jpg) no-repeat;
-  width: 520px;
-  height: 288px;
-  background-size: contain;
-  display: inline;
+  background: url(../images/Class1NewTest2.jpg) no-repeat center center;
+  width: 40%;
+  height: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: inline-block;
   position: relative;
   float: right;
-  top: -82px;
-  border-radius: 10px; }
+  top: -90px;
+  border-radius: 2px; }
 
 .level-one-description {
   display: inline-block;
-  max-width: 750px;
+  max-width: 50%;
   position: relative;
   top: 30px;
   font-size: 1.2em;
@@ -971,10 +973,94 @@ form {
   color: #6B6A6A;
   font-weight: 300; }
 
+.level-one-bottom-row-lockup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center; }
+
+.level-one-learnto-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-one-learnto-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif;
+  color: #333;
+  text-align: center; }
+
+.level-one-learnto {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  color: #6B6A6A;
+  font-weight: 300;
+  text-align: left; }
+
+.level-one-requirements-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-one-requirements-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
+
+.level-one-requirements {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  color: #6B6A6A;
+  font-weight: 300; }
+
+.level-one-requirements-check {
+  color: #333; }
+
+.level-one-signup-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-one-signup-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
+
+.level-one-signup {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  color: #6B6A6A;
+  font-weight: 300; }
+  .level-one-signup a {
+    color: #582A72;
+    font-weight: 400; }
+
 .classes-level-two-lockup {
   display: block;
+  position: absolute;
   background: rgba(92, 52, 125, 0.8);
-  padding: 45px 60px;
+  padding: 56px 7%;
+  margin: 45px 0px;
   height: 600px; }
 
 .level-two {
@@ -988,28 +1074,28 @@ form {
 .level-two-title {
   text-transform: uppercase;
   display: block;
+  max-width: 65%;
   font-size: 32px;
   letter-spacing: 0.3em;
   font-weight: 300;
   font-family: Gill Sans, sans-serif; }
 
 .level-two-picture {
-  background: url(../images/classes2.jpg) no-repeat;
-  width: 500px;
-  height: 288px;
-  background-size: contain;
-  display: inline;
+  background: url(../images/Class2NewTest.jpg) no-repeat;
+  width: 40%;
+  height: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: inline-block;
   position: relative;
   float: right;
-  top: -82px;
-  border-radius: 5%;
-  -moz-border-radius: 5%;
-  -webkit-border-radius: 5%;
-  -o-border-radius: 5%; }
+  top: -90px;
+  border-radius: 2px; }
 
 .level-two-description {
   display: inline-block;
-  max-width: 750px;
+  max-width: 50%;
   position: relative;
   top: 30px;
   font-size: 1.2em;
@@ -1017,68 +1103,78 @@ form {
   line-height: 1.7em;
   font-weight: 300; }
 
-.classes-level-three-lockup {
-  display: block;
-  background: rgba(42, 8, 69, 0.8);
-  padding: 40px 30px;
-  height: 600px; }
+.level-two-bottom-row-lockup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center; }
 
-.level-three {
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 48px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
+.level-two-learnto-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
 
-.level-three-title {
+.level-two-learnto-title {
   text-transform: uppercase;
   display: block;
   font-size: 32px;
   letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif;
+  text-align: center; }
+
+.level-two-learnto {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
   font-weight: 300;
+  text-align: left; }
+
+.level-two-requirements-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-two-requirements-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
   font-family: Gill Sans, sans-serif; }
 
-.level-three-description {
+.level-two-requirements {
   display: inline-block;
-  padding-right: 10%;
-  width: 50%;
+  position: relative;
   font-size: 1.2em;
-  margin: 0px auto;
-  line-height: 1.2em;
-  padding-top: 50px;
+  margin: 0px 20px;
+  line-height: 1.7em;
   font-weight: 300; }
 
-.classes-level-four-lockup {
-  display: block;
-  background: rgba(172, 93, 148, 0.8);
-  padding: 40px 30px;
-  height: 600px; }
+.level-two-signup-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
 
-.level-four {
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 48px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-
-.level-four-title {
+.level-two-signup-title {
   text-transform: uppercase;
   display: block;
   font-size: 32px;
   letter-spacing: 0.3em;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Gill Sans, sans-serif; }
 
-.level-four-description {
+.level-two-signup {
   display: inline-block;
-  padding-right: 10%;
-  width: 50%;
+  position: relative;
   font-size: 1.2em;
-  margin: 0px auto;
-  line-height: 1.2em;
-  padding-top: 100px; }
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300; }
+  .level-two-signup a {
+    color: #582A72;
+    font-weight: 400; }
 
 .shows-landing-lockup {
   background: url(../images/showsTest.jpg) no-repeat center center;
@@ -1166,6 +1262,6 @@ form {
   line-height: 1.7em;
   color: #6B6A6A;
   font-weight: 300;
-  margin: 0px 200px;
+  margin: 0px 250px;
   text-align: center;
   top: 100px; }

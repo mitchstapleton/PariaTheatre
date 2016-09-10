@@ -49,8 +49,9 @@
     
 .classes-level-one-lockup
     display: block
+    position: absolute
     background: rgba(#ffffff, 1)
-    padding: 45px 60px
+    padding: 56px 7%
     margin: 45px 0px
     height: 600px
     
@@ -61,7 +62,6 @@
     letter-spacing: 0.3em
     font-weight: 400
     font-family: Gill Sans, sans-serif
-    color: #333
     
 .biglink
     color: black
@@ -69,6 +69,7 @@
 .level-one-title
     text-transform: uppercase
     display: block
+    max-width: 65%
     font-size: 32px
     letter-spacing: 0.3em
     font-weight: 300
@@ -76,19 +77,21 @@
     color: #333
 
 .level-one-picture
-    background: url(../images/classes1.jpg) no-repeat
-    width: 520px
-    height: 288px
-    background-size: contain
-    display: inline
+    background: url(../images/Class1NewTest2.jpg) no-repeat center center
+    width: 40%
+    height: 50%
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    display: inline-block
     position: relative
     float: right
-    top: -82px
-    border-radius: 10px
+    top: -90px
+    border-radius: 2px
     
 .level-one-description
     display: inline-block
-    max-width: 750px
+    max-width: 50%
     position: relative
     top: 30px
     font-size: 1.2em
@@ -96,13 +99,97 @@
     line-height: 1.7em
     color: #6B6A6A
     font-weight: 300
+    
+.level-one-bottom-row-lockup    
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 100%
+    text-align: center
+    
+.level-one-learnto-lockup
+    flex-grow: 1
+    flex-basis: 0
+    
+.level-one-learnto-title
+    text-transform: uppercase
+    display: block
+    font-size: 32px
+    letter-spacing: 0.3em
+    font-weight: 400
+    font-family: Gill Sans, sans-serif
+    color: #333
+    text-align: center
+    
+.level-one-learnto
+    display: inline-block
+    position: relative
+    font-size: 1.2em
+    margin: 0px 20px
+    line-height: 1.7em
+    color: #6B6A6A
+    font-weight: 300
+    text-align: left
+    
+.level-one-requirements-lockup
+    flex-grow: 1
+    flex-basis: 0
+    
+.level-one-requirements-title
+    text-transform: uppercase
+    display: block
+    font-size: 32px
+    letter-spacing: 0.3em
+    font-weight: 400
+    font-family: Gill Sans, sans-serif
+    color: #333
+    
+.level-one-requirements
+    display: inline-block
+    position: relative
+    font-size: 1.2em
+    margin: 0px 20px
+    line-height: 1.7em
+    color: #6B6A6A
+    font-weight: 300
  
+.level-one-requirements-check
+    color: #333
+    
+.level-one-signup-lockup
+    flex-grow: 1
+    flex-basis: 0
+    
+.level-one-signup-title
+    text-transform: uppercase
+    display: block
+    font-size: 32px
+    letter-spacing: 0.3em
+    font-weight: 400
+    font-family: Gill Sans, sans-serif
+    color: #333
+    
+.level-one-signup
+    display: inline-block
+    position: relative
+    font-size: 1.2em
+    margin: 0px 20px
+    line-height: 1.7em
+    color: #6B6A6A
+    font-weight: 300
+    
+    a
+        color: $form-color
+        font-weight: 400
+    
 .classes-level-two-lockup
     display: block
+    position: absolute
     background: rgba(#5C347D, 0.8)
-    padding: 45px 60px
+    padding: 56px 7%
+    margin: 45px 0px
     height: 600px
-    
 .level-two
     text-transform: uppercase
     display: inline-block
@@ -114,28 +201,28 @@
 .level-two-title
     text-transform: uppercase
     display: block
+    max-width: 65%
     font-size: 32px
     letter-spacing: 0.3em
     font-weight: 300
     font-family: Gill Sans, sans-serif
 
 .level-two-picture
-    background: url(../images/classes2.jpg) no-repeat
-    width: 500px
-    height: 288px
-    background-size: contain
-    display: inline
+    background: url(../images/Class2NewTest.jpg) no-repeat
+    width: 40%
+    height: 50%
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    display: inline-block
     position: relative
     float: right
-    top: -82px
-    border-radius: 5%
-    -moz-border-radius: 5%
-    -webkit-border-radius: 5%
-    -o-border-radius: 5%
+    top: -90px
+    border-radius: 2px
     
 .level-two-description
     display: inline-block
-    max-width: 750px
+    max-width: 50%
     position: relative
     top: 30px
     font-size: 1.2em
@@ -143,66 +230,77 @@
     line-height: 1.7em
     font-weight: 300
     
-.classes-level-three-lockup
-    display: block
-    background: rgba(#2a0845, 0.8)
-    padding: 40px 30px
-    height: 600px    
+.level-two-bottom-row-lockup    
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 100%
+    text-align: center
     
-.level-three
-    text-transform: uppercase
-    display: inline-block
-    font-size: 48px
-    letter-spacing: 0.3em
-    font-weight: 400
-    font-family: Gill Sans, sans-serif
+.level-two-learnto-lockup
+    flex-grow: 1
+    flex-basis: 0
     
-.level-three-title
+.level-two-learnto-title
     text-transform: uppercase
     display: block
     font-size: 32px
     letter-spacing: 0.3em
-    font-weight: 300
-    font-family: Gill Sans, sans-serif
-
-.level-three-description
-    display: inline-block
-    padding-right: 10%
-    width: 50%
-    font-size: 1.2em
-    margin: 0px auto
-    line-height: 1.2em
-    padding-top: 50px
-    font-weight: 300
-    
-.classes-level-four-lockup
-    display: block
-    background: rgba(#AC5D94, 0.8)
-    padding: 40px 30px
-    height: 600px    
-    
-.level-four
-    text-transform: uppercase
-    display: inline-block
-    font-size: 48px
-    letter-spacing: 0.3em
     font-weight: 400
     font-family: Gill Sans, sans-serif
+    text-align: center
     
-.level-four-title
+.level-two-learnto
+    display: inline-block
+    position: relative
+    font-size: 1.2em
+    margin: 0px 20px
+    line-height: 1.7em
+    font-weight: 300
+    text-align: left
+    
+.level-two-requirements-lockup
+    flex-grow: 1
+    flex-basis: 0
+    
+.level-two-requirements-title
     text-transform: uppercase
     display: block
     font-size: 32px
     letter-spacing: 0.3em
-    font-weight: 300
+    font-weight: 400
     font-family: Gill Sans, sans-serif
-
-.level-four-description
+    
+.level-two-requirements
     display: inline-block
-    padding-right: 10%
-    width: 50%
+    position: relative
     font-size: 1.2em
-    margin: 0px auto
-    line-height: 1.2em
-    padding-top: 100px
+    margin: 0px 20px
+    line-height: 1.7em
+    font-weight: 300
+    
+.level-two-signup-lockup
+    flex-grow: 1
+    flex-basis: 0
+    
+.level-two-signup-title
+    text-transform: uppercase
+    display: block
+    font-size: 32px
+    letter-spacing: 0.3em
+    font-weight: 400
+    font-family: Gill Sans, sans-serif
+    
+.level-two-signup
+    display: inline-block
+    position: relative
+    font-size: 1.2em
+    margin: 0px 20px
+    line-height: 1.7em
+    font-weight: 300
+    
+    a
+        color: $form-color
+        font-weight: 400
     

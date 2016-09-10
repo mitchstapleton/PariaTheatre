@@ -4,8 +4,10 @@
     -moz-background-size: cover
     -o-background-size: cover
     height: calc(100vh - 45px)
-    z-index: 1000
+    z-index: 900
     display: block
+    position: relative
+    top: 45px
     
 .about-intro-text
     text-align: center
@@ -18,7 +20,6 @@
     letter-spacing: 0.3em
     font-weight: 400
     font-family: Gill Sans, sans-serif
-    border-bottom: 2px solid #fff
     
 .about-intro-continue
     display: block
@@ -32,16 +33,12 @@
     letter-spacing: 0.3em
     font-weight: 400
     font-family: Gill Sans, sans-serif
+    text-decoration: none
     
-    a
-        display: block
-        +transition()
-        
-        &:hover
-            +transform(scale (1.2))
     
 .about-intro-downarrow
-    display: inline-block
+    display: block
+    top: 10px
     position: relative
     margin: auto
     width: 40px
@@ -50,9 +47,10 @@
     
 .whatis-blurb-lockup
     display: block
-    background-color: #2a0845
+    background-color: #ffffff
     text-align: center
     padding: 80px 30px
+    height: 300px
            
 .whatis-blurb
     display: inline-block
@@ -67,11 +65,13 @@
     padding-right: 10%
     width: 50%
     text-transform: uppercase
-    font-size: 1.5em
-    font-weight: 300
+    font-size: 1.3em
+    font-weight: 400
     margin: 0px auto
     max-width: 400px
     line-height: 1.6em
+    color: #333
+    letter-spacing: 0.1em
     
     
 .whatis-blurb-bodytext
@@ -82,22 +82,27 @@
     font-size: 1.2em
     line-height: 1.35em
     font-weight: 300
+    color: #333
     
 .history-blurb-lockup
-    background-color: #4E0438
-    display: flex
+    background-color: #ffffff
+    display: block
+    height: 1500px
+    padding: 60px 40px
+    position: absolute
     
 .history-blurb
-    width: 50%
-    display: inline-block
+    width: 61%
+    display: block
     position: relative
-    +clearfix
-    max-width: 700px
-    text-align: center
+    top: 100px
     margin: 0px auto 
     font-size: 24px
     font-weight: 300
-    border: 1px solid red
+    text-align: center
+    font-size: 1.2em
+    line-height: 1.5em
+    color: #6B6A6A
     
 .whyParia-blurb-lockup
     background-color: #584469
