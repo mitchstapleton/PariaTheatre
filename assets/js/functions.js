@@ -10,3 +10,11 @@ var headroom  = new Headroom(myElement, {
 // initialise
 headroom.init(); 
 })
+
+$(window).load(function() {
+  $('.classes-lockup').flexslider({
+    animation: "fade",
+    controlsContainer: $(".custom-controls-container"),
+    customDirectionNav: $(".custom-navigation a")
+  });
+});

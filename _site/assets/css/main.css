@@ -403,8 +403,8 @@ strong {
 hr {
   width: 40%;
   height: 0px;
-  border-top: 2px solid #6441A5;
-  margin: 85px auto 30px; }
+  border-top: 1px solid #6441A5;
+  z-index: 10000; }
 
 a {
   color: #ffffff; }
@@ -431,7 +431,7 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: #000000;
+  background: #ffffff;
   font-size: 18px;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
@@ -458,13 +458,14 @@ body {
   background: linear-gradient(to left, #6441A5, #2a0845); }
 
 .HeaderLogo {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gill Sans", sans-serif;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 30px;
   line-height: 1;
   padding: 0px 10px;
   color: #ffffff;
+  letter-spacing: 0.3em;
   margin: 3px 0px 0px 20px; }
 
 .HeaderTitle {
@@ -557,7 +558,7 @@ nav a {
   display: block;
   background-color: #ffffff;
   text-align: center;
-  padding: 80px 30px;
+  padding: 130px 30px;
   height: 300px; }
 
 .whatis-blurb {
@@ -588,14 +589,25 @@ nav a {
   font-size: 1.2em;
   line-height: 1.35em;
   font-weight: 300;
-  color: #333; }
+  color: #333;
+  margin-bottom: 20px; }
 
 .history-blurb-lockup {
-  background-color: #ffffff;
+  background-color: #000000;
   display: block;
   height: 1500px;
-  padding: 60px 40px;
+  padding: 50px 40px;
   position: absolute; }
+
+.history-picture {
+  display: block;
+  background: url(../images/Class4.jpg) no-repeat center center;
+  background-size: cover;
+  height: 65vh;
+  width: 70%;
+  position: relative;
+  border-radius: 2px;
+  margin: 0px auto; }
 
 .history-blurb {
   width: 61%;
@@ -677,7 +689,12 @@ nav a {
   z-index: 100;
   display: block;
   position: relative;
-  top: 35px; }
+  top: 35px;
+  max-width: 1500px;
+  margin: 0px auto; }
+
+.contact-form-blurb-lockup {
+  padding-bottom: 50px; }
 
 .contact-title {
   text-transform: uppercase;
@@ -872,6 +889,19 @@ form {
       display: block;
       color: #ffffff; }
 
+.classes-lockup {
+  margin: 0 auto; }
+
+.custom-controls-container {
+  position: relative;
+  z-index: 100; }
+  .custom-controls-container a {
+    display: inline;
+    background: #582A72;
+    color: white;
+    padding: 5px;
+    text-decoration: none; }
+
 .classes-landing-title {
   text-transform: uppercase;
   display: inline-block;
@@ -881,8 +911,7 @@ form {
   font-size: 60px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  border-bottom: 5px solid #fff; }
+  font-family: Gill Sans, sans-serif; }
 
 .classes-landing-lockup {
   background: url(../images/PariaHomeTest2.jpg) no-repeat center center;
@@ -902,7 +931,7 @@ form {
   left: 0px;
   max-width: 60%;
   font-size: 22px;
-  background: rgba(42, 8, 69, 0.7);
+  background: rgba(42, 8, 69, 0.8);
   padding: 0px 10px 0px 60px;
   letter-spacing: 0.1em;
   font-weight: 300;
@@ -922,10 +951,9 @@ form {
 
 .classes-level-one-lockup {
   display: block;
-  position: absolute;
+  position: relative;
   background: white;
-  padding: 56px 7%;
-  margin: 45px 0px;
+  padding: 130px 7% 0px 7%;
   height: 600px; }
 
 .level-one {
@@ -934,7 +962,8 @@ form {
   font-size: 48px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
+  font-family: Gill Sans, sans-serif;
+  color: black; }
 
 .biglink {
   color: black; }
@@ -950,7 +979,7 @@ form {
   color: #333; }
 
 .level-one-picture {
-  background: url(../images/Class1NewTest2.jpg) no-repeat center center;
+  background: url(../images/showsTest.jpg) no-repeat center center;
   width: 40%;
   height: 50%;
   -webkit-background-size: cover;
@@ -1057,10 +1086,9 @@ form {
 
 .classes-level-two-lockup {
   display: block;
-  position: absolute;
-  background: rgba(92, 52, 125, 0.8);
-  padding: 56px 7%;
-  margin: 45px 0px;
+  position: relative;
+  background: #5c347d;
+  padding: 130px 7% 0px 7%;
   height: 600px; }
 
 .level-two {
@@ -1081,7 +1109,7 @@ form {
   font-family: Gill Sans, sans-serif; }
 
 .level-two-picture {
-  background: url(../images/Class2NewTest.jpg) no-repeat;
+  background: url(../images/classes_level_one_photo.jpg) no-repeat;
   width: 40%;
   height: 50%;
   -webkit-background-size: cover;
@@ -1173,7 +1201,247 @@ form {
   line-height: 1.7em;
   font-weight: 300; }
   .level-two-signup a {
-    color: #582A72;
+    color: #A1A0A1;
+    font-weight: 400; }
+
+.classes-level-three-lockup {
+  display: block;
+  position: relative;
+  background: #431c64;
+  padding: 130px 7% 0px 7%;
+  height: 600px; }
+
+.level-three {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 48px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif; }
+
+.level-three-title {
+  text-transform: uppercase;
+  display: block;
+  max-width: 65%;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  font-family: Gill Sans, sans-serif; }
+
+.level-three-picture {
+  background: url(../images/Class3.jpg) no-repeat;
+  width: 40%;
+  height: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: -90px;
+  border-radius: 2px; }
+
+.level-three-description {
+  display: inline-block;
+  max-width: 50%;
+  position: relative;
+  top: 30px;
+  font-size: 1.2em;
+  margin: 0px auto;
+  line-height: 1.7em;
+  font-weight: 300; }
+
+.level-three-bottom-row-lockup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center; }
+
+.level-three-learnto-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-three-learnto-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif;
+  text-align: center; }
+
+.level-three-learnto {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300;
+  text-align: left; }
+
+.level-three-requirements-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-three-requirements-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif; }
+
+.level-three-requirements {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300; }
+
+.level-three-signup-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-three-signup-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif; }
+
+.level-three-signup {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300; }
+  .level-three-signup a {
+    color: #A1A0A1;
+    font-weight: 400; }
+
+.classes-level-four-lockup {
+  display: block;
+  position: relative;
+  background: #2a0846;
+  padding: 130px 7% 0px 7%;
+  height: 600px; }
+
+.level-four {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 48px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif; }
+
+.level-four-title {
+  text-transform: uppercase;
+  display: block;
+  max-width: 65%;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  font-family: Gill Sans, sans-serif; }
+
+.level-four-picture {
+  background: url(../images/Class4.jpg) no-repeat;
+  width: 40%;
+  height: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: -90px;
+  border-radius: 2px; }
+
+.level-four-description {
+  display: inline-block;
+  max-width: 50%;
+  position: relative;
+  top: 30px;
+  font-size: 1.2em;
+  margin: 0px auto;
+  line-height: 1.7em;
+  font-weight: 300; }
+
+.level-four-bottom-row-lockup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center; }
+
+.level-four-learnto-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-four-learnto-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif;
+  text-align: center; }
+
+.level-four-learnto {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300;
+  text-align: left; }
+
+.level-four-requirements-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-four-requirements-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif; }
+
+.level-four-requirements {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300; }
+
+.level-four-signup-lockup {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.level-four-signup-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  font-family: Gill Sans, sans-serif; }
+
+.level-four-signup {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 0px 20px;
+  line-height: 1.7em;
+  font-weight: 300; }
+  .level-four-signup a {
+    color: #A1A0A1;
     font-weight: 400; }
 
 .shows-landing-lockup {
@@ -1216,7 +1484,7 @@ form {
   height: 60vh;
   width: 75%;
   position: relative;
-  border-radius: 10px;
+  border-radius: 2px;
   margin: 0px auto; }
 
 .shows-pe-title {
