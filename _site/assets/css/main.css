@@ -435,7 +435,8 @@ body {
   font-size: 18px;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  font-family: Gill Sans, sans-serif; }
 
 .headroom {
   will-change: transform;
@@ -475,7 +476,7 @@ body {
   padding: 13px 20px 0px 0px;
   margin: 0px 0px 0px 0px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   display: inline-block;
   float: right; }
@@ -505,9 +506,93 @@ nav a {
     padding: 13px 20px 0px 0px;
     margin: 0px 0px 0px 0px;
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 18px;
     display: inline-block; } }
+.FooterContainer {
+  display: block;
+  height: 180px;
+  background: -webkit-linear-gradient( right , #6441A5, #2a0845);
+  background: linear-gradient(to left, #6441A5, #2a0845);
+  clear: both; }
+
+.footer-content-lockup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75%;
+  text-align: center;
+  position: relative;
+  top: 25px;
+  margin: 0px auto; }
+
+.footer-navbar {
+  flex-grow: 1;
+  flex-basis: 0; }
+  .footer-navbar a {
+    display: block;
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+    color: #ffffff;
+    font-weight: 300; }
+
+.footer-logo-lockup {
+  flex-grow: 1;
+  flex-basis: 0;
+  font-family: "Gill Sans", sans-serif;
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 0px auto;
+  color: #ffffff;
+  margin: 0px auto;
+  left: 15px; }
+
+.footer-logo-text {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 300;
+  font-family: Gill Sans, sans-serif;
+  letter-spacing: 0.8em;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  top: -10px;
+  left: -20px; }
+
+.footer-copyright-text {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.1em; }
+
+.icon-logo-footer {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  fill: white; }
+
+.social-links-footer {
+  text-align: center; }
+  .social-links-footer a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    .social-links-footer a:hover {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5); }
+
 .about-intro {
   background: url(../images/PariaHomeTest2.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -592,16 +677,41 @@ nav a {
   color: #333;
   margin-bottom: 20px; }
 
-.history-blurb-lockup {
+.about-quote-lockup {
   height: 450px;
   background: #333; }
+
+.about-quote-one {
+  position: relative;
+  display: inline-block;
+  top: 125px;
+  left: 150px;
+  width: 60%;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0px auto;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.about-quote-one-author {
+  display: inline-block;
+  position: relative;
+  top: 150px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  font-weight: 300; }
+
+.history-blurb-lockup {
+  height: 450px;
+  background: #000000; }
 
 .history-picture {
   background: url(../images/Class4.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 245px);
   z-index: 900;
   display: block;
   position: relative; }
@@ -609,23 +719,24 @@ nav a {
 .history-blurb-opener {
   position: relative;
   top: 75px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 400;
   margin: 0px auto;
   line-height: 1.4em;
   letter-spacing: 0.1em;
-  margin: 0px 25%;
-  color: #ffffff; }
+  margin: 0px 20%;
+  color: #ffffff;
+  text-transform: uppercase; }
 
 .history-blurb-bodytext {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.35em;
   font-weight: 300;
-  margin: 0px 25%;
+  margin: 0px 20%;
   color: #ffffff;
   position: relative;
-  top: 125px; }
+  top: 150px; }
 
 .whyParia-blurb-lockup {
   background-color: #584469; }

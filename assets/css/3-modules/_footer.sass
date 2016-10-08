@@ -1,0 +1,81 @@
+.FooterContainer
+    display: block
+    height: 180px
+    @include background( linear-gradient(to left, #6441A5 , #2a0845))
+    clear: both
+        
+.footer-content-lockup
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 75%
+    text-align: center
+    position: relative
+    top: 25px
+    margin: 0px auto
+    
+.footer-navbar
+    flex-grow: 1
+    flex-basis: 0
+    
+    a
+        display: block
+        font-size: 20px
+        font-family: 'Gill Sans', sans-serif
+        color: #ffffff
+        font-weight: 300
+    
+.footer-logo-lockup
+    flex-grow: 1
+    flex-basis: 0
+    font-family: 'Gill Sans', sans-serif
+    display: inline-block
+    position: relative
+    font-weight: 400
+    font-size: 30px
+    padding: 0px auto
+    color: #ffffff
+    margin: 0px auto
+    left: 15px
+    
+.footer-logo-text
+    display: inline-block
+    position: relative
+    text-align: left
+    font-size: 10px
+    font-weight: 300
+    font-family: Gill Sans, sans-serif
+    letter-spacing: 0.8em
+    text-transform: uppercase
+    line-height: 1.2em
+    top: -10px
+    left: -20px
+
+.footer-copyright-text
+    font-size: 11px
+    font-weight: 300
+    letter-spacing: 0.1em
+    
+.icon-logo-footer
+    display: inline-block
+    position: relative
+    width: 50px
+    fill: white
+    
+.social-links-footer
+    text-align: center
+    a
+        display: inline-block
+        +size(50px)
+        line-height: 50px
+        color: white
+        font-size: 30px
+        text-decoration: none
+        +transition()
+
+        &:hover
+            +transform(scale(1.5))
+
+
+

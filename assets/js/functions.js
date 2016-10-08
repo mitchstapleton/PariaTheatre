@@ -14,6 +14,7 @@ headroom.init();
 $(window).load(function() {
   $('.classes-lockup').flexslider({
     animation: "fade",
+    slideshow: false,
     controlsContainer: $(".custom-controls-container"),
     customDirectionNav: $(".custom-navigation a")
   });
