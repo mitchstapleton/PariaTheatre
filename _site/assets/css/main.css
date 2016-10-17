@@ -510,7 +510,7 @@ nav a {
     display: inline-block; } }
 .FooterContainer {
   display: block;
-  height: 180px;
+  height: 225px;
   background: -webkit-linear-gradient( right , #6441A5, #2a0845);
   background: linear-gradient(to left, #6441A5, #2a0845);
   clear: both; }
@@ -553,7 +553,7 @@ nav a {
   display: inline-block;
   position: relative;
   text-align: left;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 300;
   font-family: Gill Sans, sans-serif;
   letter-spacing: 0.8em;
@@ -570,7 +570,7 @@ nav a {
 .icon-logo-footer {
   display: inline-block;
   position: relative;
-  width: 50px;
+  width: 75px;
   fill: white; }
 
 .social-links-footer {
@@ -613,8 +613,7 @@ nav a {
   text-transform: uppercase;
   font-size: 60px;
   letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
+  font-weight: 400; }
 
 .about-intro-continue {
   display: block;
@@ -627,7 +626,6 @@ nav a {
   font-size: 40px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif;
   text-decoration: none; }
 
 .about-intro-downarrow {
@@ -643,8 +641,8 @@ nav a {
   display: block;
   background-color: #ffffff;
   text-align: center;
-  padding: 130px 30px;
-  height: 300px; }
+  padding: 60px 30px 0px;
+  height: 325px; }
 
 .whatis-blurb {
   display: inline-block;
@@ -703,8 +701,8 @@ nav a {
   font-weight: 300; }
 
 .history-blurb-lockup {
-  height: 450px;
-  background: #000000; }
+  height: 380px;
+  background: #333; }
 
 .history-picture {
   background: url(../images/Class4.jpg) no-repeat center center;
@@ -736,7 +734,7 @@ nav a {
   margin: 0px 20%;
   color: #ffffff;
   position: relative;
-  top: 150px; }
+  top: 100px; }
 
 .whyParia-blurb-lockup {
   background-color: #584469; }
@@ -801,13 +799,12 @@ nav a {
   display: block;
   background: white;
   padding: 40px 60px;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 110px);
   z-index: 100;
   display: block;
   position: relative;
-  top: 35px;
   max-width: 1500px;
-  margin: 0px auto; }
+  margin: 35px auto 0px auto; }
 
 .contact-form-blurb-lockup {
   padding-bottom: 50px; }
@@ -1030,7 +1027,7 @@ form {
   font-family: Gill Sans, sans-serif; }
 
 .classes-landing-lockup {
-  background: url(../images/PariaHomeTest2.jpg) no-repeat center center;
+  background: url(../images/Classes1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1043,12 +1040,12 @@ form {
 .classes-landing-blurb {
   display: inline-block;
   position: absolute;
-  top: 200px;
+  top: 600px;
   left: 0px;
-  max-width: 60%;
+  max-width: 100%;
   font-size: 22px;
-  background: rgba(42, 8, 69, 0.8);
-  padding: 0px 10px 0px 60px;
+  background: rgba(51, 51, 51, 0.5);
+  padding: 0px 20px 0px 20px;
   letter-spacing: 0.1em;
   font-weight: 300;
   line-height: 1.3em; }
@@ -1203,7 +1200,7 @@ form {
 .classes-level-two-lockup {
   display: block;
   position: relative;
-  background: #5c347d;
+  background: #2a0846;
   padding: 130px 7% 0px 7%;
   height: 600px; }
 
@@ -1225,7 +1222,7 @@ form {
   font-family: Gill Sans, sans-serif; }
 
 .level-two-picture {
-  background: url(../images/classes_level_one_photo.jpg) no-repeat;
+  background: url(../images/Classes2.jpg) no-repeat;
   width: 40%;
   height: 50%;
   -webkit-background-size: cover;
@@ -1323,7 +1320,7 @@ form {
 .classes-level-three-lockup {
   display: block;
   position: relative;
-  background: #431c64;
+  background: white;
   padding: 130px 7% 0px 7%;
   height: 600px; }
 
@@ -1333,7 +1330,8 @@ form {
   font-size: 48px;
   letter-spacing: 0.3em;
   font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
 
 .level-three-title {
   text-transform: uppercase;
@@ -1342,7 +1340,8 @@ form {
   font-size: 32px;
   letter-spacing: 0.3em;
   font-weight: 300;
-  font-family: Gill Sans, sans-serif; }
+  font-family: Gill Sans, sans-serif;
+  color: #333; }
 
 .level-three-picture {
   background: url(../images/Class3.jpg) no-repeat;
@@ -1365,7 +1364,8 @@ form {
   font-size: 1.2em;
   margin: 0px auto;
   line-height: 1.7em;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #333; }
 
 .level-three-bottom-row-lockup {
   display: flex;
@@ -1373,7 +1373,8 @@ form {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  color: #333; }
 
 .level-three-learnto-lockup {
   flex-grow: 1;
@@ -1562,8 +1563,6 @@ form {
 
 .shows-landing-lockup {
   background: url(../images/showsTest.jpg) no-repeat center center;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1588,9 +1587,7 @@ form {
   display: block;
   background: white;
   padding: 45px 60px;
-  margin: 45px 0px;
-  height: 1500px;
-  position: absolute; }
+  margin: 45px 0px; }
 
 .shows-pe-picture {
   display: block;

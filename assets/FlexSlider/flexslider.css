@@ -200,8 +200,8 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 6px;
+  height: 6px;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);
