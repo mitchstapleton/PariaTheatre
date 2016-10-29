@@ -9,13 +9,22 @@ var headroom  = new Headroom(myElement, {
 });
 // initialise
 headroom.init(); 
-})
-
-$(window).load(function() {
-  $('.classes-lockup').flexslider({
+    
+$('.classes-lockup').flexslider({
     animation: "fade",
     slideshow: false,
     controlsContainer: $(".custom-controls-container"),
-    customDirectionNav: $(".custom-navigation a")
+    customDirectionNav: $(".custom-navigation a"),
   });
+    
+$(".custom-nav-prev").click(function(){
+    $('.classes-lockup').flexslider('prev')
+    return false;
 });
+
+$('.custom-nav-next').click(function(){
+    $('.classes-lockup').flexslider('next')
+    return false;
+});
+    
+})

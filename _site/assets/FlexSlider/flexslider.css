@@ -191,6 +191,7 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   position: absolute;
   bottom: -40px;
+  z-index: 1000;
   text-align: center;
 }
 .flex-control-nav li {
@@ -200,8 +201,8 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);

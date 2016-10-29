@@ -93,8 +93,8 @@
 
 .level-one-picture
     background: url(../images/showsTest.jpg) no-repeat center center
-    width: 40%
-    height: 50%
+    width: 500px
+    height: 300px
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
@@ -224,8 +224,8 @@
 
 .level-two-picture
     background: url(../images/Classes2.jpg) no-repeat
-    width: 40%
-    height: 50%
+    width: 500px
+    height: 300px
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
@@ -347,8 +347,8 @@
 
 .level-three-picture
     background: url(../images/Class3.jpg) no-repeat
-    width: 40%
-    height: 50%
+    width: 500px
+    height: 300px
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
@@ -470,8 +470,8 @@
 
 .level-four-picture
     background: url(../images/Class4.jpg) no-repeat
-    width: 40%
-    height: 50%
+    width: 500px
+    height: 300px
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
@@ -564,4 +564,36 @@
     a
         color: #A1A0A1
         font-weight: 400
+        
+.custom-nav-classes
+    display: block
+    width: 100%
+    position: relative
+    top: 300px
     
+    a
+        display: inline
+        position: relative
+        color: #333
+        z-index: 100
+        font-size: 100px
+        text-decoration: none
+        +transition()
+              
+.custom-nav-prev
+    float: left
+    left: 40px
+    +transition()
+    padding: 0 50px
+    
+    &:hover
+        +transform(translateX(-10px))
+    
+.custom-nav-next
+    float: right
+    right: 40px
+    +transition()
+    padding: 0 50px
+    
+    &:hover
+        +transform(translateX(10px))
