@@ -37,7 +37,7 @@
     
 .navbar
     padding: 15px 15px 0px 0px
-    margin: 0px 0px 0px 0px
+    margin: 0
     text-transform: uppercase
     font-weight: 300
     letter-spacing: 0.15em
@@ -63,14 +63,25 @@ nav a
     fill: white
     margin: 0px 20px 0px 0px
     
-@media only screen and (max-width: 1160px)
-            
-    .HeaderTitle
-        display: none
+@media only screen and (max-width: 1000px)
+    
+    .HeaderContainer
+        height: 90px
+        text-align: center
         
     .navbar
-        padding: 13px 20px 0px 0px
-        margin: 0px 0px 0px 0px
-        text-transform: uppercase
-        font-size: 18px
-        display: inline-block
+        display: block
+        float: none
+        text-align: center
+        
+@media only screen and (max-width: 525px)
+    
+    .HeaderTitle
+        letter-spacing: 0.4em
+    
+    
+@media only screen and (max-width: 455px)
+    
+    nav a
+        font-size: 14px
+        padding: 8px 0px 0px 8px

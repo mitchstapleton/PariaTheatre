@@ -477,7 +477,7 @@ body {
 
 .navbar {
   padding: 15px 15px 0px 0px;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.15em;
@@ -502,16 +502,22 @@ nav a {
   fill: white;
   margin: 0px 20px 0px 0px; }
 
-@media only screen and (max-width: 1160px) {
-  .HeaderTitle {
-    display: none; }
+@media only screen and (max-width: 1000px) {
+  .HeaderContainer {
+    height: 90px;
+    text-align: center; }
 
   .navbar {
-    padding: 13px 20px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    text-transform: uppercase;
-    font-size: 18px;
-    display: inline-block; } }
+    display: block;
+    float: none;
+    text-align: center; } }
+@media only screen and (max-width: 525px) {
+  .HeaderTitle {
+    letter-spacing: 0.4em; } }
+@media only screen and (max-width: 455px) {
+  nav a {
+    font-size: 14px;
+    padding: 8px 0px 0px 8px; } }
 .FooterContainer {
   display: block;
   height: 225px;
@@ -997,14 +1003,27 @@ nav a {
       -o-transform: scale(1.5);
       transform: scale(1.5); }
 
+.form-container {
+  display: block;
+  height: 600px;
+  clear: both;
+  color: #ffffff;
+  background-color: #333; }
+
 .form-lockup {
-  color: #000000; }
+  display: block;
+  position: relative;
+  top: 80px; }
 
 .form-header {
   color: white;
+  position: relative;
+  top: -20px;
   text-align: center;
-  font-size: 30px;
-  font-weight: 700; }
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase; }
 
 form {
   max-width: 850px;
@@ -1020,7 +1039,8 @@ form {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 16px; }
+    font-size: 16px;
+    color: #333; }
     form input:focus, form textarea:focus {
       outline: none;
       border-color: #764B8E; }
@@ -1029,11 +1049,14 @@ form {
   form .submit-wrap {
     text-align: right; }
   form [type="submit"] {
-    background: #582A72;
+    background: #2a0845;
+    background: #2a0845;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    width: 33%; }
+    width: 33%;
+    float: right;
+    border: none; }
     form [type="submit"]:hover {
       background: #764B8E; }
   form .contact-info-group label {
@@ -1050,8 +1073,7 @@ form {
     display: block;
     margin-bottom: 20px; }
     form label span {
-      display: block;
-      color: #ffffff; }
+      display: block; }
 
 .classes-lockup {
   margin: 0 auto; }
@@ -1116,9 +1138,10 @@ form {
 .classes-level-one-lockup {
   display: block;
   position: relative;
-  background: white;
-  padding: 130px 7% 0px 7%;
-  height: 600px; }
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+  top: 150px; }
 
 .level-one {
   text-transform: uppercase;
@@ -1248,12 +1271,18 @@ form {
     color: #582A72;
     font-weight: 400; }
 
+.classes-level-two-bgcolor {
+  background: -webkit-linear-gradient( left , #19022C, #2a0845);
+  background: linear-gradient(to right, #19022C, #2a0845);
+  height: 730px; }
+
 .classes-level-two-lockup {
   display: block;
   position: relative;
-  background: #2a0846;
-  padding: 130px 7% 0px 7%;
-  height: 600px; }
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+  top: 150px; }
 
 .level-two {
   text-transform: uppercase;
@@ -1273,7 +1302,7 @@ form {
   font-family: Gill Sans, sans-serif; }
 
 .level-two-picture {
-  background: url(../images/Classes2.jpg) no-repeat;
+  background: url(../images/Class2NewTest.jpg) no-repeat;
   width: 500px;
   height: 300px;
   -webkit-background-size: cover;
@@ -1371,9 +1400,10 @@ form {
 .classes-level-three-lockup {
   display: block;
   position: relative;
-  background: white;
-  padding: 130px 7% 0px 7%;
-  height: 600px; }
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+  top: 150px; }
 
 .level-three {
   text-transform: uppercase;
@@ -1492,12 +1522,18 @@ form {
     color: #A1A0A1;
     font-weight: 400; }
 
+.classes-level-four-bgcolor {
+  background: -webkit-linear-gradient( left , #19022C, #2a0845);
+  background: linear-gradient(to right, #19022C, #2a0845);
+  height: 730px; }
+
 .classes-level-four-lockup {
   display: block;
   position: relative;
-  background: #2a0846;
-  padding: 130px 7% 0px 7%;
-  height: 600px; }
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+  top: 150px; }
 
 .level-four {
   text-transform: uppercase;
@@ -1630,11 +1666,11 @@ form {
 
 .custom-nav-prev {
   float: left;
-  left: 40px;
+  left: 1%;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  padding: 0 50px; }
+  padding: 0 50px 0px 0px; }
   .custom-nav-prev:hover {
     -webkit-transform: translateX(-10px);
     -moz-transform: translateX(-10px);
@@ -1644,11 +1680,11 @@ form {
 
 .custom-nav-next {
   float: right;
-  right: 40px;
+  right: 1%;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  padding: 0 50px; }
+  padding: 0 0 0 50px; }
   .custom-nav-next:hover {
     -webkit-transform: translateX(10px);
     -moz-transform: translateX(10px);

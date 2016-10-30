@@ -65,9 +65,10 @@
 .classes-level-one-lockup
     display: block
     position: relative
-    background: rgba(#ffffff, 1)
-    padding: 130px 7% 0px 7%
     height: 600px
+    width: 1200px
+    margin: 0 auto
+    top: 150px
     
 .level-one
     text-transform: uppercase
@@ -197,13 +198,18 @@
     a
         color: $form-color
         font-weight: 400
-    
+
+.classes-level-two-bgcolor
+    @include background( linear-gradient(to right, #19022C , #2a0845))
+    height: 730px
+        
 .classes-level-two-lockup
     display: block
     position: relative
-    background: rgba(#2A0846, 1)
-    padding: 130px 7% 0px 7%
     height: 600px
+    width: 1200px
+    margin: 0 auto
+    top: 150px
     
 .level-two
     text-transform: uppercase
@@ -223,7 +229,7 @@
     font-family: Gill Sans, sans-serif
 
 .level-two-picture
-    background: url(../images/Classes2.jpg) no-repeat
+    background: url(../images/Class2NewTest.jpg) no-repeat
     width: 500px
     height: 300px
     -webkit-background-size: cover
@@ -322,9 +328,10 @@
 .classes-level-three-lockup
     display: block
     position: relative
-    background: rgba(#ffffff, 1)
-    padding: 130px 7% 0px 7%
     height: 600px
+    width: 1200px
+    margin: 0 auto
+    top: 150px
     
 .level-three
     text-transform: uppercase
@@ -444,12 +451,17 @@
         color: #A1A0A1
         font-weight: 400
     
+.classes-level-four-bgcolor
+    @include background( linear-gradient(to right, #19022C , #2a0845))
+    height: 730px
+    
 .classes-level-four-lockup
     display: block
     position: relative
-    background: rgba(#2A0846, 1)
-    padding: 130px 7% 0px 7%
     height: 600px
+    width: 1200px
+    margin: 0 auto
+    top: 150px
     
 .level-four
     text-transform: uppercase
@@ -582,18 +594,18 @@
               
 .custom-nav-prev
     float: left
-    left: 40px
+    left: 1%
     +transition()
-    padding: 0 50px
+    padding: 0 50px 0px 0px
     
     &:hover
         +transform(translateX(-10px))
     
 .custom-nav-next
     float: right
-    right: 40px
+    right: 1%
     +transition()
-    padding: 0 50px
+    padding: 0 0 0 50px
     
     &:hover
         +transform(translateX(10px))

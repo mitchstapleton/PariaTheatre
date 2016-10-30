@@ -10,6 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/FlexSlider/flexslider.css" />
 <script src="/assets/FlexSlider/jquery.flexslider.js"></script>
+<script src="/assets/js/smooth-scroll.js"></script>
 <script src="/assets/js/headroom.js"></script>
 <script src="/assets/js/functions.js"></script>
 </head>
@@ -97,13 +98,14 @@
                     </div>
                     <div class="level-one-signup-lockup">
                         <div class="level-one-signup-title">Sign Up:</div>
-                        <div class=level-one-signup>Please click <a href="#">here </a>to register your interest in our level one course.</div>
+                        <div class="level-one-signup">Please click <a data-level="one" data-scroll class="classes-hyperlink" href="#form-container">here</a> to register your interest in our level one course.</div>
                     </div>
 
                 </div>
             </div>
         </li>
         <li>
+            <div class="classes-level-two-bgcolor">
             <div class="classes-level-two-lockup">
                 <div class="level-two">Level Two</div>
                 <div class="level-two-title">The Toolbox</div>
@@ -129,10 +131,11 @@
                     </div>
                     <div class="level-two-signup-lockup">
                         <div class="level-two-signup-title">Sign Up:</div>
-                        <div class=level-two-signup>Please click <a href="#">here </a>to register your interest in our level two course.</div>
+                        <div class="level-two-signup">Please click <a data-level="two" class="classes-hyperlink" href="#">here</a> to register your interest in our level two course.</div>
                     </div>
 
                 </div>
+            </div>
             </div>
         </li>
         <li>
@@ -162,13 +165,14 @@
                     </div>
                     <div class="level-three-signup-lockup">
                         <div class="level-three-signup-title">Sign Up:</div>
-                        <div class=level-three-signup>Please click <a href="#">here </a>to register your interest in our level three course.</div>
+                        <div class="level-three-signup">Please click <a data-level="three" class="classes-hyperlink" href="#">here</a> to register your interest in our level three course.</div>
                     </div>
 
                 </div>
             </div>
         </li>
         <li>
+        <div class="classes-level-four-bgcolor">
         <div class="classes-level-four-lockup">
                 <div class="level-four">Level Four</div>
                 <div class="level-four-title">Advanced Improv</div>
@@ -194,10 +198,11 @@
                     </div>
                     <div class="level-four-signup-lockup">
                         <div class="level-four-signup-title">Sign Up:</div>
-                        <div class=level-four-signup>Please click <a href="#">here </a>to register your interest in our level three course.</div>
+                        <div class="level-four-signup">Please click <a href="#" data-level="four" class="classes-hyperlink">here</a> to register your interest in our level three course.</div>
                     </div>
 
                 </div>
+            </div>
             </div>
         </li>
     </ul>
@@ -209,8 +214,36 @@
     </div>
     
     
-        
 
+
+</section>
+    
+    <section>
+    <div id="form-container" class="form-container">
+    <div class="form-lockup">
+        <div class="form-header">Contact</div>
+        <form method="POST" action="//formspree.io/pariaexchange@gmail.com">
+
+            <div class="contact-info-group">
+                <label><span>Name:</span>
+                    <input type="text" name="name" placeholder="Your Name">
+                </label>
+                <label><span>E-mail:</span>
+                    <input type="email" name="_replyto" placeholder="Your E-mail">
+                </label>
+            </div>
+
+
+            <label><span>Comment:</span>
+                <textarea id="message-box" name="message"></textarea>
+                <input type="submit" value="Send">
+            </label>
+
+
+        </form>
+
+    </div>
+    </div>
 </section>
     
     <footer>
@@ -250,7 +283,8 @@
 
     
 </footer>
-    
+
+  
     
 </body>
     
