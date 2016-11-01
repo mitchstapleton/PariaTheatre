@@ -1078,16 +1078,6 @@ form {
 .classes-lockup {
   margin: 0 auto; }
 
-.custom-controls-container {
-  position: relative;
-  z-index: 100; }
-  .custom-controls-container a {
-    display: inline;
-    background: #582A72;
-    color: white;
-    padding: 5px;
-    text-decoration: none; }
-
 .classes-landing-title {
   text-transform: uppercase;
   display: inline-block;
@@ -1166,7 +1156,7 @@ form {
   color: #333; }
 
 .level-one-picture {
-  background: url(../images/showsTest.jpg) no-repeat center center;
+  background: url(../images/class_imgresize_1.jpg) no-repeat;
   width: 500px;
   height: 300px;
   -webkit-background-size: cover;
@@ -1268,8 +1258,9 @@ form {
   color: #6B6A6A;
   font-weight: 300; }
   .level-one-signup a {
-    color: #582A72;
-    font-weight: 400; }
+    color: #333;
+    font-weight: 400;
+    text-decoration: underline !important; }
 
 .classes-level-two-bgcolor {
   background: -webkit-linear-gradient( left , #19022C, #2a0845);
@@ -1302,7 +1293,7 @@ form {
   font-family: Gill Sans, sans-serif; }
 
 .level-two-picture {
-  background: url(../images/Class2NewTest.jpg) no-repeat;
+  background: url(../images/class_imgresize_2.jpg) no-repeat;
   width: 500px;
   height: 300px;
   -webkit-background-size: cover;
@@ -1394,8 +1385,9 @@ form {
   line-height: 1.7em;
   font-weight: 300; }
   .level-two-signup a {
-    color: #A1A0A1;
-    font-weight: 400; }
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: underline !important; }
 
 .classes-level-three-lockup {
   display: block;
@@ -1425,7 +1417,7 @@ form {
   color: #333; }
 
 .level-three-picture {
-  background: url(../images/Class3.jpg) no-repeat;
+  background: url(../images/class_imgresize_3.jpg) no-repeat;
   width: 500px;
   height: 300px;
   -webkit-background-size: cover;
@@ -1519,8 +1511,9 @@ form {
   line-height: 1.7em;
   font-weight: 300; }
   .level-three-signup a {
-    color: #A1A0A1;
-    font-weight: 400; }
+    color: #333;
+    font-weight: 400;
+    text-decoration: underline !important; }
 
 .classes-level-four-bgcolor {
   background: -webkit-linear-gradient( left , #19022C, #2a0845);
@@ -1553,7 +1546,7 @@ form {
   font-family: Gill Sans, sans-serif; }
 
 .level-four-picture {
-  background: url(../images/Class4.jpg) no-repeat;
+  background: url(../images/class_imgresize_4.jpg) no-repeat;
   width: 500px;
   height: 300px;
   -webkit-background-size: cover;
@@ -1645,8 +1638,9 @@ form {
   line-height: 1.7em;
   font-weight: 300; }
   .level-four-signup a {
-    color: #A1A0A1;
-    font-weight: 400; }
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: underline !important; }
 
 .custom-nav-classes {
   display: block;

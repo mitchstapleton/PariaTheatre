@@ -14,7 +14,7 @@ smoothScroll.init();
 $('.classes-lockup').flexslider({
     animation: "fade",
     slideshow: false,
-    customDirectionNav: $(".custom-navigation a")
+    customDirectionNav: $(".custom-navigation a"),
   });
     
 $(".custom-nav-prev").click(function(){
@@ -28,8 +28,9 @@ $('.custom-nav-next').click(function(){
 });
 
 $('.classes-hyperlink').click(function(){
+    $('#message-box').empty();
     var levelString = " " + $(this).attr("data-level") + " ";
-    var fullString = "Hello! I am interested in learning more about Paria Theatre's level" + levelString + "course :)";
+    var fullString = "Hello! I am interested in learning more about Paria Theatre's level" + levelString + "course.";
     $('#message-box').text(fullString);
 });
 })
