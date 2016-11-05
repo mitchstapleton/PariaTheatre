@@ -14,6 +14,7 @@ smoothScroll.init();
 $('.classes-lockup').flexslider({
     animation: "fade",
     slideshow: false,
+    touch: true,
     customDirectionNav: $(".custom-navigation a"),
   });
     

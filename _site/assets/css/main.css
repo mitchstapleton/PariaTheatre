@@ -1075,6 +1075,19 @@ form {
     form label span {
       display: block; }
 
+@media only screen and (max-width: 600px) {
+  form .contact-info-group label {
+    width: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    form .contact-info-group label:nth-child(1) {
+      padding-right: 0px; }
+    form .contact-info-group label:nth-child(2) {
+      padding-left: 0px; }
+  form [type="submit"] {
+    width: 100%; } }
 .classes-lockup {
   margin: 0 auto; }
 
@@ -1101,7 +1114,7 @@ form {
   top: 45px; }
 
 .classes-landing-blurb {
-  display: inline-block;
+  display: none;
   position: absolute;
   top: 600px;
   left: 0px;
@@ -1157,7 +1170,7 @@ form {
 
 .level-one-picture {
   background: url(../images/class_imgresize_1.jpg) no-repeat;
-  width: 500px;
+  width: 400px;
   height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1191,47 +1204,9 @@ form {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-one-learnto-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  color: #333;
-  text-align: center; }
-
-.level-one-learnto {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  color: #6B6A6A;
-  font-weight: 300;
-  text-align: left; }
-
 .level-one-requirements-lockup {
   flex-grow: 1;
   flex-basis: 0; }
-
-.level-one-requirements-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  color: #333; }
-
-.level-one-requirements {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  color: #6B6A6A;
-  font-weight: 300; }
 
 .level-one-requirements-check {
   color: #333; }
@@ -1240,7 +1215,7 @@ form {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-one-signup-title {
+.classes-flextitle-opt1 {
   text-transform: uppercase;
   display: block;
   font-size: 32px;
@@ -1249,7 +1224,7 @@ form {
   font-family: Gill Sans, sans-serif;
   color: #333; }
 
-.level-one-signup {
+.classes-flextext-opt1 {
   display: inline-block;
   position: relative;
   font-size: 1.2em;
@@ -1257,7 +1232,7 @@ form {
   line-height: 1.7em;
   color: #6B6A6A;
   font-weight: 300; }
-  .level-one-signup a {
+  .classes-flextext-opt1 a {
     color: #333;
     font-weight: 400;
     text-decoration: underline !important; }
@@ -1294,7 +1269,7 @@ form {
 
 .level-two-picture {
   background: url(../images/class_imgresize_2.jpg) no-repeat;
-  width: 500px;
+  width: 400px;
   height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1327,49 +1302,15 @@ form {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-two-learnto-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  text-align: center; }
-
-.level-two-learnto {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300;
-  text-align: left; }
-
 .level-two-requirements-lockup {
   flex-grow: 1;
   flex-basis: 0; }
-
-.level-two-requirements-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-
-.level-two-requirements {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300; }
 
 .level-two-signup-lockup {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-two-signup-title {
+.classes-flextitle-opt2 {
   text-transform: uppercase;
   display: block;
   font-size: 32px;
@@ -1377,14 +1318,14 @@ form {
   font-weight: 400;
   font-family: Gill Sans, sans-serif; }
 
-.level-two-signup {
+.classes-flextext-opt2 {
   display: inline-block;
   position: relative;
   font-size: 1.2em;
   margin: 0px 20px;
   line-height: 1.7em;
   font-weight: 300; }
-  .level-two-signup a {
+  .classes-flextext-opt2 a {
     color: #ffffff;
     font-weight: 400;
     text-decoration: underline !important; }
@@ -1418,7 +1359,7 @@ form {
 
 .level-three-picture {
   background: url(../images/class_imgresize_3.jpg) no-repeat;
-  width: 500px;
+  width: 400px;
   height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1453,67 +1394,13 @@ form {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-three-learnto-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  text-align: center; }
-
-.level-three-learnto {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300;
-  text-align: left; }
-
 .level-three-requirements-lockup {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-three-requirements-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-
-.level-three-requirements {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300; }
-
 .level-three-signup-lockup {
   flex-grow: 1;
   flex-basis: 0; }
-
-.level-three-signup-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-
-.level-three-signup {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300; }
-  .level-three-signup a {
-    color: #333;
-    font-weight: 400;
-    text-decoration: underline !important; }
 
 .classes-level-four-bgcolor {
   background: -webkit-linear-gradient( left , #19022C, #2a0845);
@@ -1547,7 +1434,7 @@ form {
 
 .level-four-picture {
   background: url(../images/class_imgresize_4.jpg) no-repeat;
-  width: 500px;
+  width: 400px;
   height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1580,67 +1467,13 @@ form {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-four-learnto-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif;
-  text-align: center; }
-
-.level-four-learnto {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300;
-  text-align: left; }
-
 .level-four-requirements-lockup {
   flex-grow: 1;
   flex-basis: 0; }
 
-.level-four-requirements-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-
-.level-four-requirements {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300; }
-
 .level-four-signup-lockup {
   flex-grow: 1;
   flex-basis: 0; }
-
-.level-four-signup-title {
-  text-transform: uppercase;
-  display: block;
-  font-size: 32px;
-  letter-spacing: 0.3em;
-  font-weight: 400;
-  font-family: Gill Sans, sans-serif; }
-
-.level-four-signup {
-  display: inline-block;
-  position: relative;
-  font-size: 1.2em;
-  margin: 0px 20px;
-  line-height: 1.7em;
-  font-weight: 300; }
-  .level-four-signup a {
-    color: #ffffff;
-    font-weight: 400;
-    text-decoration: underline !important; }
 
 .custom-nav-classes {
   display: block;
@@ -1686,6 +1519,69 @@ form {
     -o-transform: translateX(10px);
     transform: translateX(10px); }
 
+@media only screen and (max-width: 1335px) {
+  .classes-level-one-lockup {
+    width: 1000px; }
+
+  .classes-level-two-lockup {
+    width: 1000px; }
+
+  .classes-level-three-lockup {
+    width: 1000px; }
+
+  .classes-level-four-lockup {
+    width: 1000px; }
+
+  .level-one-description {
+    width: 450px;
+    font-size: 1em; }
+
+  .level-two-description {
+    width: 450px;
+    font-size: 1em; }
+
+  .level-three-description {
+    width: 450px;
+    font-size: 1em; }
+
+  .level-four-description {
+    width: 450px;
+    font-size: 1em; }
+
+  .level-one-title {
+    font-size: 28px; }
+
+  .level-two-title {
+    font-size: 28px; }
+
+  .level-three-title {
+    font-size: 28px; }
+
+  .level-four-title {
+    font-size: 28px; } }
+@media only screen and (max-width: 1130px) {
+  .classes-level-one-lockup, .classes-level-two-lockup, .classes-level-three-lockup, .classes-level-four-lockup {
+    width: 800px; }
+
+  .level-one-bottom-row-lockup, .level-two-bottom-row-lockup, .level-three-bottom-row-lockup, .level-four-bottom-row-lockup {
+    position: relative;
+    top: 30px; }
+
+  .level-one-picture, .level-two-picture, .level-three-picture, .level-four-picture {
+    width: 300px;
+    height: 225px; }
+
+  .classes-flextitle-opt1, .classes-flextitle-opt2 {
+    font-size: 26px; }
+
+  .classes-flextext-opt1, .classes-flextext-opt2 {
+    font-size: 1em; } }
+@media only screen and (max-width: 910px) {
+  .level-one-picture, .level-two-picture, .level-three-picture, .level-four-picture {
+    display: none; }
+
+  .level-one-title {
+    display: inline-block; } }
 .shows-landing-lockup {
   background: url(../images/showsTest.jpg) no-repeat center center;
   -webkit-background-size: cover;
