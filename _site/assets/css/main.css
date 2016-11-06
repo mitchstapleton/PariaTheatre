@@ -1114,7 +1114,7 @@ form {
   top: 45px; }
 
 .classes-landing-blurb {
-  display: none;
+  display: inline-block;
   position: absolute;
   top: 600px;
   left: 0px;
@@ -1520,44 +1520,15 @@ form {
     transform: translateX(10px); }
 
 @media only screen and (max-width: 1335px) {
-  .classes-level-one-lockup {
+  .classes-level-one-lockup, .classes-level-two-lockup, .classes-level-three-lockup, .classes-level-four-lockup {
     width: 1000px; }
 
-  .classes-level-two-lockup {
-    width: 1000px; }
-
-  .classes-level-three-lockup {
-    width: 1000px; }
-
-  .classes-level-four-lockup {
-    width: 1000px; }
-
-  .level-one-description {
+  .level-one-description, .level-two-description, .level-three-description, .level-four-description {
     width: 450px;
+    max-width: none;
     font-size: 1em; }
 
-  .level-two-description {
-    width: 450px;
-    font-size: 1em; }
-
-  .level-three-description {
-    width: 450px;
-    font-size: 1em; }
-
-  .level-four-description {
-    width: 450px;
-    font-size: 1em; }
-
-  .level-one-title {
-    font-size: 28px; }
-
-  .level-two-title {
-    font-size: 28px; }
-
-  .level-three-title {
-    font-size: 28px; }
-
-  .level-four-title {
+  .level-one-title, .level-two-title, .level-three-title, .level-four-title {
     font-size: 28px; } }
 @media only screen and (max-width: 1130px) {
   .classes-level-one-lockup, .classes-level-two-lockup, .classes-level-three-lockup, .classes-level-four-lockup {
@@ -1577,11 +1548,51 @@ form {
   .classes-flextext-opt1, .classes-flextext-opt2 {
     font-size: 1em; } }
 @media only screen and (max-width: 910px) {
+  .classes-landing-title {
+    width: 100%;
+    left: auto;
+    text-align: center;
+    top: 84px; }
+
+  .classes-landing-blurb {
+    top: 200px; }
+
   .level-one-picture, .level-two-picture, .level-three-picture, .level-four-picture {
     display: none; }
 
-  .level-one-title {
-    display: inline-block; } }
+  .level-one-title, .level-two-title, .level-three-title, .level-four-title {
+    display: block;
+    max-width: 100%; }
+
+  .classes-level-one-lockup, .classes-level-two-lockup, .classes-level-three-lockup, .classes-level-four-lockup {
+    text-align: center;
+    width: auto; }
+
+  .level-one-bottom-row-lockup, .level-two-bottom-row-lockup, .level-three-bottom-row-lockup, .level-four-bottom-row-lockup {
+    top: 50px;
+    flex-direction: column; }
+
+  .classes-flextext-opt1, .classes-flextext-opt2 {
+    font-size: 1em;
+    padding-bottom: 15px;
+    width: 300px; }
+
+  .level-one-description, .level-two-description, .level-three-description, .level-four-description {
+    width: 75%; }
+
+  .custom-nav-classes a {
+    font-size: 50px;
+    top: 70px; }
+
+  .classes-level-one-lockup, .classes-level-two-lockup, .classes-level-three-lockup, .classes-level-four-lockup {
+    top: 120px;
+    height: 820px; }
+
+  .classes-level-two-bgcolor, .classes-level-four-bgcolor {
+    height: 820px; }
+
+  .level-one, .level-two, .level-three, .level-four {
+    font-size: 38px; } }
 .shows-landing-lockup {
   background: url(../images/showsTest.jpg) no-repeat center center;
   -webkit-background-size: cover;
