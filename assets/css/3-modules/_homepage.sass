@@ -1,35 +1,64 @@
-.homepage-lockup
+.homepage-landing
+    height: 100vh
+    z-index: 900
     display: block
-    background: url(../images/PariaHomeTest1.jpg) no-repeat center center
+    width: 100%
+    
+.homepage-logo-lockup
+    display: inline-block
+    text-align: center
+    width: 100%
+    position: relative
+    top: 100px
+    margin: 0px auto
+    
+.homepage-landing-background
+    background: url(../images/PariaHomeTest2.jpg) no-repeat center center
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
-    height: calc(100vh - 45px)
-    margin: 0px 0px 200px 0px
-    padding-top: 45px
-    
-.logo-text
+    height: 100vh
+    width: 100%
+    z-index: 1
+    display: block
+    position: relative
+        
+.icon-logo-homepage
     display: inline-block
-    position: absolute
+    position: relative
+    text-align: center
+    top: 45px
+    z-index: 1
+    width: 200px
+    fill: white
+    z-index: 2
+    padding-left: 5%
+
+.paria-logo-text
+    display: inline-block
+    position: relative
     text-align: left
-    font-size: 50px
+    font-size: 42px
     font-weight: 300
-    font-family: Gill Sans, sans-serif
-    letter-spacing: 0.8em
+    font-family: 'Open Sans', sans-serif
+    letter-spacing: 1em
     text-transform: uppercase
     line-height: 1.2em
-    top: 275px
-    left: 200px
-
+    left: -55px
+    top: 5px
+    z-index: 2
         
 .homepage-blurb
-    display: inline-block
-    width: 600px
-    position: absolute
-    text-align: left
-    left: 50px
-    top: 550px
-    font-size: 36px
+    display: block
+    width: 30%
+    position: relative
+    font-family: 'Open Sans', sans-serif
+    text-align: center
+    font-size: 26px
+    z-index: 2
+    font-weight: 300
+    margin: 0px auto
+    top: 175px
     
 .homepage-sub-blurb
     display: inline-block
@@ -39,11 +68,31 @@
     width: 1000px
     right: 10px
     bottom: 10px
+
+.homepage-cta-lockup
+    display: flex
+    position: relative
+    justify-content: space-between
+    width: 75%
+    margin: 0px auto
+    top: 250px
     
-.icon-logo-homepage
-    display: inline-block
-    position: absolute
-    width: 200px
-    fill: white
-    top: 100px
-    left: 50px
+    div
+        display: inline
+        font-size: 26px
+        border: 1px solid white
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-left: 20px
+        padding-right: 10px
+        text-transform: uppercase
+        text-align: center
+        font-weight: 400
+        letter-spacing: 0.6em
+        background: rgba(42, 8, 69, 0.8)
+        border-radius: 2%
+        flex-grow: 1
+        
+        &:hover
+            background: $form-highlight-color
+        transition: all 0.1s ease-in
