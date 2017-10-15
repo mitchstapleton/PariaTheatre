@@ -14,8 +14,8 @@
     transform: translateY(-100%)
 
 .HeaderContainer
-    height: 45px
-    @include background( linear-gradient(to right, #19022C , #2a0845))
+    height: 65px
+    @include background( linear-gradient(to right, #438496 , #6AA4B5))
         
             
 .HeaderLogo
@@ -26,29 +26,34 @@
     line-height: 1
     padding: 0px 10px
     color: #ffffff
-    letter-spacing: 0.8em
+    letter-spacing: 0.25em
     margin: 3px 0px 0px 20px
+    
+.LastName
+    font-weight: 700
+    color: #F1AD67
+    letter-spacing: 0.25em
     
 .HeaderTitle
     display: inline-block
     position: relative
-    top: -3px
+    top: 18px
     left: -12px
     
 .navbar
-    padding: 15px 15px 0px 0px
+    padding: 22px 30px 0px 0px
     margin: 0
     text-transform: uppercase
     font-weight: 300
-    letter-spacing: 0.15em
-    font-size: 16px
+    letter-spacing: 0.25em
+    font-size: 18px
     display: inline-block
     float: right
     
 nav a
     color: white
     text-align: center
-    padding: 8px 0px 0px 12px
+    padding: 8px 0px 0px 20px
     text-decoration: none
 
 
@@ -73,6 +78,8 @@ nav a
         display: block
         float: none
         text-align: center
+        position: relative
+        top: 7px
         
 @media only screen and (max-width: 525px)
     
@@ -85,3 +92,6 @@ nav a
     nav a
         font-size: 14px
         padding: 8px 0px 0px 8px
+        
+    .HeaderLogo
+        font-size: 22px

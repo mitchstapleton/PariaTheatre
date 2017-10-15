@@ -1,98 +1,200 @@
-.homepage-landing
-    height: 100vh
-    z-index: 900
-    display: block
-    width: 100%
-    
-.homepage-logo-lockup
-    display: inline-block
-    text-align: center
-    width: 100%
-    position: relative
-    top: 100px
-    margin: 0px auto
-    
-.homepage-landing-background
-    background: url(../images/homepagetest.jpg) no-repeat center center
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    height: 100vh
-    width: 100%
-    z-index: 1
-    display: block
-    position: relative
-        
-.icon-logo-homepage
-    display: inline-block
-    position: relative
-    text-align: center
-    top: 45px
-    z-index: 1
-    width: 200px
-    fill: white
-    z-index: 2
-    padding-left: 5%
-
-.paria-logo-text
-    display: inline-block
-    position: relative
-    text-align: left
-    font-size: 42px
-    font-weight: 300
-    font-family: 'Open Sans', sans-serif
-    letter-spacing: 1em
-    text-transform: uppercase
-    line-height: 1.2em
-    left: -55px
-    top: 5px
-    z-index: 2
-        
-.homepage-blurb
-    display: block
-    width: 30%
-    position: relative
-    font-family: 'Open Sans', sans-serif
-    text-align: center
-    font-size: 26px
-    z-index: 2
-    font-weight: 300
-    margin: 0px auto
-    top: 175px
-    
-.homepage-sub-blurb
-    display: inline-block
-    position: absolute
-    text-align: right
-    font-size: 30px
-    width: 1000px
-    right: 10px
-    bottom: 10px
-
-.homepage-cta-lockup
+.top-module-latest
+    display: -ms-flexbox
     display: flex
     position: relative
-    justify-content: space-between
-    width: 75%
-    margin: 0px auto
-    top: 250px
+    width: 100%
+    height: 75vh
+    min-height: 550px
+    max-height: 650px
+    min-width: 400px
+    max-width: 700px
+    margin-right: auto
+    margin-left: auto
+    background-position: 50% 50%
+    background-size: cover
     
-    div
-        display: inline
-        font-size: 26px
-        border: 1px solid white
-        padding-top: 20px
-        padding-bottom: 20px
-        padding-left: 20px
-        padding-right: 10px
-        text-transform: uppercase
-        text-align: center
-        font-weight: 400
-        letter-spacing: 0.6em
-        background: rgba(42, 8, 69, 0.8)
-        border-radius: 2%
-        flex-grow: 1
+.max-container 
+    width: 100%
+    max-width: 1594px
+    padding-right: .733rem
+    padding-left: .733rem
+    position: relative
+    top: 65px
+
+.top-module-latest .top-module-image 
+    display: -ms-inline-flexbox
+    display: inline-flex
+    -ms-flex-negative: 1
+    flex-shrink: 1
+    width: 100%
+    height: 45vh
+
+.top-module-latest .top-module-image img
+    width: 100%
+    object-fit: cover
+    
+.top-module-latest .top-module-header-container 
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-direction: column
+    flex-direction: column
+    -ms-flex-pack: center
+    justify-content: center
+    width: 100%
+    margin-top: 0
+    padding: .733rem
+    border: .733rem solid
+    text-align: center
+    background-color: #cd5360
+    
+*, :after, :before, body *, input[type=search], legend 
+    box-sizing: border-box
+
+*
+    margin: 0
+
+*, :after, :before 
+    box-sizing: inherit
+    
+.blog-grid 
+    margin: 0 auto
+    width: 100%
+    max-width: 1440px
+    padding: 0 100px 15px
+
+.blog-grid-wrapper 
+    position: relative
+    width: 100%
+    overflow: visible
+    padding: 0
+    top: 80px
+
+.blog-grid-wrapper-card
+    display: block
+    text-decoration: none
+    color: #333
+    object-fit: cover
+    
+.blog-grid-wrapper-card:after
+    content: ""
+    display: table
+    clear: both
+    
+.blog-grid-wrapper-card-thumbnail-wrapper
+    width: calc(99.99% * 1/2 - 15px)
+    
+.blog-grid-wrapper-card-thumbnail-wrapper:nth-child(1n) 
+    float: left
+    margin-right: 30px
+    clear: none
+    
+.blog-grid-wrapper-card-thumbnail
+    width: 100%
+    object-fit: cover
+    
+.inherit
+    width: inherit
+    
+.blog-grid-header
+    display: block
+    text-align: center
+    flex-flow: row wrap
+    max-width: 100%
+    margin-left: auto
+    margin-right: auto
+    margin: 0 auto -.0625rem
+    position: relative
+    z-index: 1
+    width: 100%
+    padding-top: 1em
+    
+.canonical-topic
+    color: $topic
+    
+    &:hover
+        color: lighten($topic, 10%)
+    
+.blog-grid-wrapper-card-text-summary
+    color: $card-summary
+    
+    &:hover
+        color: lighten($topic, 10%)
+    
+.blog-cta
+    text-align: center
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: 700
+    
+@media screen and (min-width: 1000px)
+    .top-module-latest .top-module-image 
+        -ms-flex-negative: 0
+        flex-shrink: 0
+        width: calc(99.99% * .66667 - (1.666rem - 1.666rem * .66667))
+        height: initial
+
+@media screen and (max-width: 1000px)
+    .modern .top-module-latest .top-module-header-container 
+        text-align: left
+    
+    .max-container
+        top: 90px
+    
+    .top-module-latest 
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        height: 100%
+        min-height: 0
+        max-height: none
         
-        &:hover
-            background: #19022C
-            transition: all 0.2s ease-in
+@media screen and (min-width: 568px)
+    .top-module-latest .top-module-header-container 
+        padding: 1.2rem
+        border-width: 1.2rem
+        margin-top: 0
+
+@media screen and (min-width: 1440px)
+    .top-module-latest
+        margin-top: 1.666rem
+        
+@media only screen and (min-width: 850px)
+    .blog-grid
+        padding: 0 30px
+        margin-bottom: 100px
+        
+    .blog-grid-wrapper 
+        padding: 0 30px
+        
+    .blog-grid-wrapper-card:first-of-type
+        padding-top: 30px
+        
+    .blog-grid-wrapper-card
+        padding: 15px 0
+        
+    .grid-wrapper-card
+        border-top: none
+        
+    .blog-grid-wrapper-card-thumbnail-wrapper:nth-child(1n) 
+        float: left
+        margin-right: 30px
+        clear: none
+        
+    .blog-grid-wrapper-card-thumbnail-wrapper 
+        width: calc(99.99% * 1/2 - 15px)
+        
+    .section-header 
+        display: flex
+        flex-flow: row wrap
+        max-width: 90rem
+        margin-left: auto
+        margin-right: auto
+        padding-left: 30px
+        padding-right: 30px
+        padding-top: 1.875rem
+        
+.cover 
+    height: 1000px
+    max-height: 400px
+    width: 100px
+    object-fit: cover
+    object-position: 0 0
