@@ -7,19 +7,24 @@ layout: base
 </div>
 {% endif %}
 <div class="blogpost-title-wrapper">
-    {% for category in page.categories %}
-<h5>
+    <div class="blogpost-title-inner">
+        <div class="blogpost-title">
+            {{ page.title }}
+        </div>
+
+        {% for category in page.categories %}
+        <h5>
     <a href="{{ category | prepend: '/categories/' | prepend: site.baseurl }}">{{ category }}</a>{% unless forloop.last%}, {% endunless %}{% endfor%} - {{ page.date | date: "%m/%d/%Y" }}
-</h5> {% for tag in page.tags %} {% if tag != site.sticky %}
-<a href="{{ tag | prepend: '/tags/' | prepend: site.baseurl }}">
-    <div class="chip waves-effect waves-red">{{ tag }}</div>
-</a>
-{% endif %} {% endfor %}
-    <div class="blogpost-title">
-        {{ page.title }}
+    </h5> {% for tag in page.tags %} {% if tag != site.sticky %}
+        <a href="{{ tag | prepend: '/tags/' | prepend: site.baseurl }}">
+            <div class="chip waves-effect waves-red">{{ tag }}</div>
+        </a>
+        {% endif %} {% endfor %}
     </div>
 </div>
 
-<div class="row">
-    {{ content }}
+<div class="blogpost-content-wrapper">
+    <div class="blogpost-content">
+        {{ content }}
+    </div>
 </div>
